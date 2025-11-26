@@ -1,0 +1,29 @@
+{
+  "name": "ott-home-interface",
+  "version": "1.0.0",
+  "description": "This is homepage of a OTT streaming platform where you can see movies and shows.",
+  "keywords": [
+    "OTT",
+    "Home",
+    "Interface"
+  ],
+  "homepage": "https://github.com/AnishDebnath/OTT-Home-Interface#readme",
+  "bugs": {
+    "url": "https://github.com/AnishDebnath/OTT-Home-Interface/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnishDebnath/OTT-Home-Interface.git"
+  },
+  "license": "ISC",
+  "author": "Anish",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
