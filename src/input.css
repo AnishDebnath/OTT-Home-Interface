@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 html,
 body,
 * {
@@ -14,4 +15,16 @@ body,
     overflow: hidden;
 
     /* max-width: 100%; */
+}
+
+@layer components {
+
+    .nav-item {
+        @apply pb-2;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+        @apply border-b-2 border-[#F5C51C] cursor-pointer;
+    }
 }

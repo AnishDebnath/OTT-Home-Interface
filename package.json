@@ -18,7 +18,7 @@
   "license": "ISC",
   "author": "Anish",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
