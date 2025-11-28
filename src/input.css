@@ -1,20 +1,14 @@
 @import "tailwindcss";
 
-
 html,
 body,
 * {
-    /* font-size: "SF Pro Display";
-    src: url("/assets/font/SFPRODISPLAYREGULAR.OTF"); */
-
     @font-face {
         font-family: "SF Pro Display";
         src: url("/assets/font/SFPRODISPLAYREGULAR.OTF");
     }
 
     overflow: hidden;
-
-    /* max-width: 100%; */
 }
 
 @layer components {
@@ -26,5 +20,9 @@ body,
     .nav-item:hover,
     .nav-item.active {
         @apply border-b-2 border-[#F5C51C] cursor-pointer;
+    }
+
+    .title {
+        @apply text-[#F7F7F7] text-[72px] font-semibold;
     }
 }

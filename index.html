@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/output.css" rel="stylesheet">
-    <title>OTT Home Interface</title>
+    <title>OTT Home TV Interface</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -20,7 +20,7 @@
     </div>
 
     <div class="absolute top-0 w-full z-10">
-        <nav class="w-[1600px] my-[40px] mx-auto flex align-center justify-between">
+        <nav class="w-[1600px] mt-[40px] mx-auto flex align-center justify-between">
             <div class="text-[20px] font-bold cursor-pointer text-[#F5C51C] uppercase">
                 <span class="bg-[#F5C51C] p-[0px_8px] text-[#202020] rounded-[4px]">New</span>
                 <span>Movie</span>
@@ -42,8 +42,53 @@
                         </svg></a>
                 </div>
             </ul>
-
         </nav>
+
+        <div class="flex flex-col w-[1600px] mt-[140px] mx-auto gap-[24px]">
+            <div class="flex flex-col">
+                <h1 class="title">Spider man</h1>
+                <h1 class="title">No Way Home</h1>
+            </div>
+            <div class="flex gap-[12px] items-center">
+                <span class="bg-[#F5C518] p-[0px_8px] text-[#202020] font-bold rounded-[4px]">IMDb</span>
+                <div class="flex gap-[4px]">
+                    <span class="text-[rgba(255,255,255,0.80)]">8.2</span>
+                    <span class="text-[rgba(255,255,255,0.40)]">(12.827)</span>
+                </div>
+                <div class="bg-[#FFFFFF] w-[5px] h-[5px] rounded-[50%]"></div>
+                <div class="flex items-center gap-[8px] text-[rgba(255,255,255,0.80)]">
+                    <span>2021</span>
+                    <div class="w-[2px] h-[10px] bg-[rgba(255,255,255,0.80)]"></div>
+                    <span>1 hour 55 minutes</span>
+                    <div class="w-[2px] h-[10px] bg-[rgba(255,255,255,0.80)]"></div>
+                    <span>Sci-fi</span>
+                </div>
+            </div>
+
+            <div class="relative text-[#FFFFFF]">
+                <p id="content" class="line-clamp-3 w-[470px]">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quaerat saepe facilis quia at?
+                    Mollitia exercitationem nesciunt necessitatibus. At voluptas consequuntur ipsa perferendis a. Illum
+                    magni repellat similique ab placeat.
+                </p>
+                <button id="toggleButton" class="text-[#F5C51C] hover:text-[#F5C51C] cursor-pointer">
+                    Show more
+                </button>
+            </div>
+
+            <div class="flex gap-[16px] w-[1600px] mx-auto mt-[24px]">
+                <button
+                    class="text-[#FFFFFF] font-semibold bg-transparent rounded-[8px] p-[16px_23px] border border-[rgba(255,255,255,0.60)]">Watch
+                    trailer</button>
+                <button class="flex items-center gap-6 font-semibold bg-[#F5C61C] rounded-[8px] p-[16px_23px]"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15" fill="none">
+                        <path d="M0 15V0L10.0002 7.26594L0 15Z" fill="#2E2E2E" />
+                    </svg><span class="text-[#2E2E2E]">Watch now</span></button>
+            </div>
+
+
+
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
