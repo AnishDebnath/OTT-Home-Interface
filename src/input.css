@@ -25,4 +25,18 @@ body,
     .title {
         @apply text-[#F7F7F7] text-[72px] font-semibold;
     }
+
+    .slider-button {
+        @apply bg-transparent p-[12px_16px] rounded-[8px] border border-[#ffffff66] cursor-pointer;
+    }
+
+    .card {
+        @apply shrink-0 w-[176px] h-[234px] bg-center bg-cover bg-no-repeat rounded-[8px];
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../assets/img/spiderman%20no%20way%20home.jpg');
+    }
+
+    .card-active {
+        @apply shrink-0 w-[208px] h-[276.545px] rounded-[12px] bg-center bg-cover bg-no-repeat;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), url('../assets/img/spiderman%20no%20way%20home.jpg');
+    }
 }

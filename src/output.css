@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
-    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -176,6 +175,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .bottom-\[80px\] {
+    bottom: 80px;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -188,14 +190,14 @@
   .mt-\[24px\] {
     margin-top: 24px;
   }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
   .mt-\[40px\] {
     margin-top: 40px;
   }
-  .mt-\[140px\] {
-    margin-top: 140px;
-  }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
+  .mt-\[50px\] {
+    margin-top: 50px;
   }
   .line-clamp-3 {
     overflow: hidden;
@@ -221,6 +223,12 @@
   .h-\[16px\] {
     height: 16px;
   }
+  .h-\[234px\] {
+    height: 234px;
+  }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -233,14 +241,8 @@
   .w-\[5px\] {
     width: 5px;
   }
-  .w-\[370px\] {
-    width: 370px;
-  }
   .w-\[470px\] {
     width: 470px;
-  }
-  .w-\[600px\] {
-    width: 600px;
   }
   .w-\[800px\] {
     width: 800px;
@@ -253,6 +255,9 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -269,14 +274,14 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
   }
   .gap-\[4px\] {
     gap: 4px;
@@ -293,13 +298,14 @@
   .gap-\[24px\] {
     gap: 24px;
   }
+  .gap-\[32px\] {
+    gap: 32px;
+  }
   .gap-\[64px\] {
     gap: 64px;
   }
-  .truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  .overflow-x-auto {
+    overflow-x: auto;
   }
   .rounded-\[4px\] {
     border-radius: 4px;
@@ -313,10 +319,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-\[2px\] {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
   }
   .border-\[rgba\(255\,255\,255\,0\.60\)\] {
     border-color: rgba(255,255,255,0.60);
@@ -335,9 +337,6 @@
   }
   .bg-\[rgba\(255\,255\,255\,0\.80\)\] {
     background-color: rgba(255,255,255,0.80);
-  }
-  .bg-\[transparent\] {
-    background-color: transparent;
   }
   .bg-transparent {
     background-color: transparent;
@@ -363,12 +362,6 @@
   .p-\[16px_23px\] {
     padding: 16px 23px;
   }
-  .p-\[16px_32px\] {
-    padding: 16px 32px;
-  }
-  .text-\[16px\] {
-    font-size: 16px;
-  }
   .text-\[18px\] {
     font-size: 18px;
   }
@@ -378,10 +371,6 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -445,6 +434,35 @@ html, body, * {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
     color: #F7F7F7;
+  }
+  .slider-button {
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: #ffffff66;
+    background-color: transparent;
+    padding: 12px 16px;
+  }
+  .card {
+    height: 234px;
+    width: 176px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('../assets/img/spiderman%20no%20way%20home.jpg');
+  }
+  .card-active {
+    height: 276.545px;
+    width: 208px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), url('../assets/img/spiderman%20no%20way%20home.jpg');
   }
 }
 @property --tw-border-style {
