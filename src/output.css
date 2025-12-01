@@ -199,6 +199,12 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
   .line-clamp-3 {
     overflow: hidden;
     display: -webkit-box;
@@ -223,8 +229,17 @@
   .h-\[16px\] {
     height: 16px;
   }
-  .h-\[234px\] {
-    height: 234px;
+  .h-\[63px\] {
+    height: 63px;
+  }
+  .h-\[65px\] {
+    height: 65px;
+  }
+  .h-\[70px\] {
+    height: 70px;
+  }
+  .h-\[90px\] {
+    height: 90px;
   }
   .h-auto {
     height: auto;
@@ -304,8 +319,17 @@
   .gap-\[64px\] {
     gap: 64px;
   }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .overflow-scroll {
+    overflow: scroll;
+  }
   .overflow-x-auto {
     overflow-x: auto;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
   }
   .rounded-\[4px\] {
     border-radius: 4px;
@@ -361,6 +385,12 @@
   }
   .p-\[16px_23px\] {
     padding: 16px 23px;
+  }
+  .px-\[16px\] {
+    padding-inline: 16px;
+  }
+  .px-\[32px\] {
+    padding-inline: 32px;
   }
   .text-\[18px\] {
     font-size: 18px;

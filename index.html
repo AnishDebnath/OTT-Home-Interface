@@ -10,10 +10,8 @@
 
 <body>
     <div class="inline-flex relative h-screen w-screen">
-        <div class="bg-[url('../assets/img/spiderman%20no%20way%20home.jpg')] bg-center bg-cover bg-no-repeat w-full h-full"
-            alt=""></div>
-        <div class="bg-[url('../assets/img/spiderman%20no%20way%20home.jpg')] bg-center bg-cover bg-no-repeat w-full h-full"
-            alt=""></div>
+        <div id="bg-layer-1" class="bg-center bg-cover bg-no-repeat w-full h-full" alt=""></div>
+        <div id="bg-layer-2" class="bg-center bg-cover bg-no-repeat w-full h-full" alt=""></div>
     </div>
     <div
         class="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.70)_2.72%,rgba(0,0,0,0.00)_35.89%,rgba(0,0,0,0.53)_100%),linear-gradient(90deg,rgba(0,0,0,0.90)_33.18%,rgba(0,0,0,0.00)_80.52%)]">
@@ -45,32 +43,28 @@
         </nav>
 
         <div class="flex flex-col w-[1600px] mt-[50px] mx-auto gap-[24px]">
-            <div class="flex flex-col">
-                <h1 class="title">Spider man</h1>
-                <h1 class="title">No Way Home</h1>
+            <div id="title-container" class="flex flex-col">
+                <h1 class="title"></h1>
+                <h1 class="title"></h1>
             </div>
             <div class="flex gap-[12px] items-center">
                 <span class="bg-[#F5C518] p-[0px_8px] text-[#202020] font-bold rounded-[4px]">IMDb</span>
                 <div class="flex gap-[4px]">
-                    <span class="text-[rgba(255,255,255,0.80)]">8.2</span>
-                    <span class="text-[rgba(255,255,255,0.40)]">(12.827)</span>
+                    <span id="movie-rating" class="text-[rgba(255,255,255,0.80)]"></span>
+                    <span id="movie-votes" class="text-[rgba(255,255,255,0.40)]"></span>
                 </div>
                 <div class="bg-[#FFFFFF] w-[5px] h-[5px] rounded-[50%]"></div>
                 <div class="flex items-center gap-[8px] text-[rgba(255,255,255,0.80)]">
-                    <span>2021</span>
+                    <span id="movie-year"></span>
                     <div class="w-[2px] h-[10px] bg-[rgba(255,255,255,0.80)]"></div>
-                    <span>1 hour 55 minutes</span>
+                    <span id="movie-duration"></span>
                     <div class="w-[2px] h-[10px] bg-[rgba(255,255,255,0.80)]"></div>
-                    <span>Sci-fi</span>
+                    <span id="movie-genre"></span>
                 </div>
             </div>
 
-            <div class="relative text-[#FFFFFF]">
-                <p id="content" class="line-clamp-3 w-[470px]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quaerat saepe facilis quia at?
-                    Mollitia exercitationem nesciunt necessitatibus. At voluptas consequuntur ipsa perferendis a. Illum
-                    magni repellat similique ab placeat.
-                </p>
+            <div class="relative text-[#FFFFFF] h-[90px]">
+                <p id="content" class="line-clamp-3 w-[470px]"></p>
                 <button id="toggleButton" class="text-[#F5C51C] hover:text-[#F5C51C] cursor-pointer">
                     Show more
                 </button>
@@ -87,7 +81,7 @@
                     </svg><span class="text-[#2E2E2E]">Watch now</span></button>
             </div>
 
-            <div class="flex gap-[16px] w-[1600px] mx-auto mt-[30px]">
+            <!-- <div class="flex gap-[16px] w-[1600px] mx-auto mt-[30px]">
                 <button class="slider-button"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="20"
                         viewBox="0 0 13 20" fill="none">
                         <path opacity="0.8" d="M11.1455 1.06006L1.14551 10.4718L11.1455 18.413" stroke="white"
@@ -98,47 +92,18 @@
                         <path opacity="0.8" d="M1.06055 1.06006L11.0605 10.4718L1.06055 18.413" stroke="white"
                             stroke-width="1.5" stroke-linecap="square" />
                     </svg></button>
-            </div>
+            </div> -->
 
         </div>
     </div>
 
-    <div class="absolute flex items-end gap-[32px] bottom-[80px] w-full h-auto z-10 overflow-x-auto">
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card-active">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
-        <div class="card">
-        </div>
+    <div id="card-container"
+        class="absolute flex items-end gap-[32px] bottom-[80px] w-full h-auto z-10 px-[32px] overflow-scroll">
     </div>
 
 
-    <script src=" script.js">
-    </script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
