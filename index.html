@@ -6,14 +6,14 @@
     <link href="src/output.css" rel="stylesheet">
     <title>OTT Home TV Interface</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body>
     <div class="inline-flex relative h-screen w-screen overflow-hidden">
-        <iframe id="bg-video"
-            class="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
+        <div id="bg-video"
+            class="absolute top-1/2 left-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        </div>
     </div>
     <div
         class="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.70)_2.72%,rgba(0,0,0,0.00)_35.89%,rgba(0,0,0,0.53)_100%),linear-gradient(90deg,rgba(0,0,0,0.90)_33.18%,rgba(0,0,0,0.00)_80.52%)]">
@@ -81,20 +81,24 @@
                         xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15" fill="none">
                         <path d="M0 15V0L10.0002 7.26594L0 15Z" fill="#2E2E2E" />
                     </svg><span class="text-[#2E2E2E]">Watch now</span></button>
+                <button id="mute-button"
+                    class="flex items-center justify-center bg-transparent rounded-[8px] p-[16px] border border-[rgba(255,255,255,0.60)] cursor-pointer">
+                    <!-- Muted icon (default) -->
+                    <svg id="muted-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <line x1="23" y1="9" x2="17" y2="15"></line>
+                        <line x1="17" y1="9" x2="23" y2="15"></line>
+                    </svg>
+                    <!-- Unmuted icon (hidden by default) -->
+                    <svg id="unmuted-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="display: none;">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    </svg>
+                </button>
             </div>
-
-            <!-- <div class="flex gap-[16px] w-[1600px] mx-auto mt-[30px]">
-                <button class="slider-button"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="20"
-                        viewBox="0 0 13 20" fill="none">
-                        <path opacity="0.8" d="M11.1455 1.06006L1.14551 10.4718L11.1455 18.413" stroke="white"
-                            stroke-width="1.5" stroke-linecap="square" />
-                    </svg></button>
-                <button class="slider-button"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="20"
-                        viewBox="0 0 13 20" fill="none">
-                        <path opacity="0.8" d="M1.06055 1.06006L11.0605 10.4718L1.06055 18.413" stroke="white"
-                            stroke-width="1.5" stroke-linecap="square" />
-                    </svg></button>
-            </div> -->
 
         </div>
     </div>

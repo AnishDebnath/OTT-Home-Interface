@@ -184,14 +184,8 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
-  .bottom-\[50px\] {
-    bottom: 50px;
-  }
   .bottom-\[55px\] {
     bottom: 55px;
-  }
-  .bottom-\[80px\] {
-    bottom: 80px;
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
@@ -217,20 +211,8 @@
   .mt-\[40px\] {
     margin-top: 40px;
   }
-  .mt-\[50px\] {
-    margin-top: 50px;
-  }
-  .mt-\[60px\] {
-    margin-top: 60px;
-  }
   .mt-\[70px\] {
     margin-top: 70px;
-  }
-  .line-clamp-2 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
   }
   .line-clamp-3 {
     overflow: hidden;
@@ -238,11 +220,11 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
-  }
-  .hidden {
-    display: none;
   }
   .inline-flex {
     display: inline-flex;
@@ -262,23 +244,11 @@
   .h-\[56\.25vw\] {
     height: 56.25vw;
   }
-  .h-\[63px\] {
-    height: 63px;
-  }
-  .h-\[65px\] {
-    height: 65px;
-  }
-  .h-\[70px\] {
-    height: 70px;
-  }
   .h-\[90px\] {
     height: 90px;
   }
   .h-auto {
     height: auto;
-  }
-  .h-full {
-    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -353,6 +323,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -377,20 +350,8 @@
   .gap-\[64px\] {
     gap: 64px;
   }
-  .overflow-auto {
-    overflow: auto;
-  }
   .overflow-hidden {
     overflow: hidden;
-  }
-  .overflow-scroll {
-    overflow: scroll;
-  }
-  .overflow-x-auto {
-    overflow-x: auto;
-  }
-  .overflow-y-auto {
-    overflow-y: auto;
   }
   .rounded-\[4px\] {
     border-radius: 4px;
@@ -429,26 +390,14 @@
   .bg-\[linear-gradient\(180deg\,rgba\(0\,0\,0\,0\.70\)_2\.72\%\,rgba\(0\,0\,0\,0\.00\)_35\.89\%\,rgba\(0\,0\,0\,0\.53\)_100\%\)\,linear-gradient\(90deg\,rgba\(0\,0\,0\,0\.90\)_33\.18\%\,rgba\(0\,0\,0\,0\.00\)_80\.52\%\)\] {
     background-image: linear-gradient(180deg,rgba(0,0,0,0.70) 2.72%,rgba(0,0,0,0.00) 35.89%,rgba(0,0,0,0.53) 100%),linear-gradient(90deg,rgba(0,0,0,0.90) 33.18%,rgba(0,0,0,0.00) 80.52%);
   }
-  .bg-\[url\(\'\.\.\/assets\/img\/spiderman\%20no\%20way\%20home\.jpg\'\)\] {
-    background-image: url('../assets/img/spiderman%20no%20way%20home.jpg');
-  }
-  .bg-cover {
-    background-size: cover;
-  }
-  .bg-center {
-    background-position: center;
-  }
-  .bg-no-repeat {
-    background-repeat: no-repeat;
-  }
   .p-\[0px_8px\] {
     padding: 0px 8px;
   }
+  .p-\[16px\] {
+    padding: 16px;
+  }
   .p-\[16px_23px\] {
     padding: 16px 23px;
-  }
-  .px-\[16px\] {
-    padding-inline: 16px;
   }
   .px-\[32px\] {
     padding-inline: 32px;

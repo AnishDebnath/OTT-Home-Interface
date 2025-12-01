@@ -31,14 +31,16 @@ const movieYear = document.getElementById('movie-year');
 const movieDuration = document.getElementById('movie-duration');
 const movieGenre = document.getElementById('movie-genre');
 
-const updateMainView = (movie) => {
-    const bgVideo = document.getElementById('bg-video');
-    if (bgVideo && movie.trailer) {
-        // YouTube embed URL with autoplay, mute, loop, and controls hidden
-        const videoUrl = `https://www.youtube.com/embed/${movie.trailer}?autoplay=1&mute=1&loop=1&playlist=${movie.trailer}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`;
-        bgVideo.src = videoUrl;
-    }
+// YouTube player instance
+let player = null;
+let isMuted = true; // Default state is muted
 
+// This function creates an <iframe> (and YouTube player)
+function onYouTubeIframeAPIReady() {
+    // Will be called automatically when API is ready
+}
+
+const updateMainView = (movie) => {
     if (titleContainer) {
         const parts = movie.title.split(':');
         titleContainer.innerHTML = '';
@@ -57,17 +59,57 @@ const updateMainView = (movie) => {
     if (movieGenre) movieGenre.textContent = movie.genre;
     if (content) {
         content.textContent = movie.description;
-        // Reset to collapsed state
         content.classList.add('line-clamp-3');
         content.classList.remove('w-[800px]');
         if (toggleButton) toggleButton.textContent = 'Show more';
+    }
+
+    // Load new video
+    if (movie.trailer) {
+        if (player) {
+            // If player exists, load new video
+            player.loadVideoById({
+                videoId: movie.trailer,
+                startSeconds: 0
+            });
+            // Apply current mute state
+            if (isMuted) {
+                player.mute();
+            } else {
+                player.unMute();
+            }
+        } else {
+            // Create new player
+            player = new YT.Player('bg-video', {
+                videoId: movie.trailer,
+                playerVars: {
+                    autoplay: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    rel: 0,
+                    loop: 1,
+                    playlist: movie.trailer,
+                    modestbranding: 1,
+                    playsinline: 1,
+                    mute: isMuted ? 1 : 0
+                },
+                events: {
+                    'onReady': (event) => {
+                        event.target.playVideo();
+                        if (isMuted) {
+                            event.target.mute();
+                        }
+                    }
+                }
+            });
+        }
     }
 };
 
 if (typeof movies !== 'undefined' && cardContainer) {
     movies.forEach((movie, index) => {
         const card = document.createElement('div');
-        const isActive = index === 0; // Default first one active
+        const isActive = index === 0;
 
         card.className = isActive ? 'card-active' : 'card';
 
@@ -140,7 +182,31 @@ if (cardContainer) {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - cardContainer.offsetLeft;
-        const walk = (x - startX) * 0.8; // Scroll-slow/natural
+        const walk = (x - startX) * 0.8;
         cardContainer.scrollLeft = scrollLeft - walk;
+    });
+}
+
+// Mute/Unmute button functionality
+const muteButton = document.getElementById('mute-button');
+const mutedIcon = document.getElementById('muted-icon');
+const unmutedIcon = document.getElementById('unmuted-icon');
+
+if (muteButton && mutedIcon && unmutedIcon) {
+    muteButton.addEventListener('click', () => {
+        if (!player) return; // No player yet
+
+        isMuted = !isMuted;
+
+        // Toggle icon visibility
+        if (isMuted) {
+            mutedIcon.style.display = 'block';
+            unmutedIcon.style.display = 'none';
+            player.mute();
+        } else {
+            mutedIcon.style.display = 'none';
+            unmutedIcon.style.display = 'block';
+            player.unMute();
+        }
     });
 }
