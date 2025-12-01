@@ -175,6 +175,12 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .bottom-\[50px\] {
+    bottom: 50px;
+  }
+  .bottom-\[55px\] {
+    bottom: 55px;
+  }
   .bottom-\[80px\] {
     bottom: 80px;
   }
@@ -198,6 +204,12 @@
   }
   .mt-\[50px\] {
     margin-top: 50px;
+  }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
+  .mt-\[70px\] {
+    margin-top: 70px;
   }
   .line-clamp-2 {
     overflow: hidden;
