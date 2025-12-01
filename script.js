@@ -24,8 +24,6 @@ if (toggleButton && content) {
 }
 
 const cardContainer = document.getElementById('card-container');
-const bgLayer1 = document.getElementById('bg-layer-1');
-const bgLayer2 = document.getElementById('bg-layer-2');
 const titleContainer = document.getElementById('title-container');
 const movieRating = document.getElementById('movie-rating');
 const movieVotes = document.getElementById('movie-votes');
@@ -34,9 +32,12 @@ const movieDuration = document.getElementById('movie-duration');
 const movieGenre = document.getElementById('movie-genre');
 
 const updateMainView = (movie) => {
-    const bgImage = `url('${movie.image}')`;
-    if (bgLayer1) bgLayer1.style.backgroundImage = bgImage;
-    if (bgLayer2) bgLayer2.style.backgroundImage = bgImage;
+    const bgVideo = document.getElementById('bg-video');
+    if (bgVideo && movie.trailer) {
+        // YouTube embed URL with autoplay, mute, loop, and controls hidden
+        const videoUrl = `https://www.youtube.com/embed/${movie.trailer}?autoplay=1&mute=1&loop=1&playlist=${movie.trailer}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`;
+        bgVideo.src = videoUrl;
+    }
 
     if (titleContainer) {
         const parts = movie.title.split(':');
@@ -97,18 +98,18 @@ if (typeof movies !== 'undefined' && cardContainer) {
     });
 }
 
-const prevButton = document.getElementById('prev-button');
-const nextButton = document.getElementById('next-button');
+// const prevButton = document.getElementById('prev-button');
+// const nextButton = document.getElementById('next-button');
 
-if (prevButton && nextButton && cardContainer) {
-    prevButton.addEventListener('click', () => {
-        cardContainer.scrollBy({ left: -208, behavior: 'smooth' });
-    });
+// if (prevButton && nextButton && cardContainer) {
+//     prevButton.addEventListener('click', () => {
+//         cardContainer.scrollBy({ left: -208, behavior: 'smooth' });
+//     });
 
-    nextButton.addEventListener('click', () => {
-        cardContainer.scrollBy({ left: 208, behavior: 'smooth' });
-    });
-}
+//     nextButton.addEventListener('click', () => {
+//         cardContainer.scrollBy({ left: 208, behavior: 'smooth' });
+//     });
+// }
 
 // Drag to scroll functionality
 if (cardContainer) {

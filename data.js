@@ -7,7 +7,8 @@ const movies = [
         year: "2021",
         duration: "2 hours 28 minutes",
         genre: "Action/Sci-fi",
-        description: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man."
+        description: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        trailer: "JfVOs4VSpmA"
     },
     {
         title: "Ant-Man and the Wasp",
@@ -17,7 +18,8 @@ const movies = [
         year: "2018",
         duration: "1 hour 58 minutes",
         genre: "Action/Adventure",
-        description: "As Scott Lang balances being both a Super Hero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past."
+        description: "As Scott Lang balances being both a Super Hero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.",
+        trailer: "8_rTIAOohas"
     },
     {
         title: "Avengers Endgame",
@@ -27,7 +29,8 @@ const movies = [
         year: "2019",
         duration: "3 hours 1 minute",
         genre: "Action/Sci-fi",
-        description: "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+        description: "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+        trailer: "TcMBFSGVi1c"
     },
     {
         title: "Avengers Infinity War",
@@ -37,7 +40,8 @@ const movies = [
         year: "2018",
         duration: "2 hours 29 minutes",
         genre: "Action/Sci-fi",
-        description: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe."
+        description: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+        trailer: "6ZfuNTqbHE8"
     },
     {
         title: "Captain America Civil War",
@@ -47,7 +51,8 @@ const movies = [
         year: "2016",
         duration: "2 hours 27 minutes",
         genre: "Action/Sci-fi",
-        description: "Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man."
+        description: "Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man.",
+        trailer: "dKrVegVI0Us"
     },
     {
         title: "Captain Marvel",
@@ -57,7 +62,8 @@ const movies = [
         year: "2019",
         duration: "2 hours 3 minutes",
         genre: "Action/Sci-fi",
-        description: "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races."
+        description: "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+        trailer: "Z1BCujX3pw8"
     },
     {
         title: "Doctor Strange In the Multiverse of Madness",
@@ -67,7 +73,8 @@ const movies = [
         year: "2022",
         duration: "2 hours 6 minutes",
         genre: "Action/Fantasy",
-        description: "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse."
+        description: "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse.",
+        trailer: "aWzlQ2N6qqg"
     },
     {
         title: "Doctor Strange",
@@ -77,7 +84,8 @@ const movies = [
         year: "2016",
         duration: "1 hour 55 minutes",
         genre: "Action/Fantasy",
-        description: "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts."
+        description: "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
+        trailer: "HSzx-zryEgM"
     },
     {
         title: "Shang-Chi The Legend of the Ten Rings",
@@ -87,7 +95,8 @@ const movies = [
         year: "2021",
         duration: "2 hours 12 minutes",
         genre: "Action/Fantasy",
-        description: "Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization."
+        description: "Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
+        trailer: "8YjFbMbfXaQ"
     },
     {
         title: "Spider-Man Far From Home",
@@ -97,7 +106,8 @@ const movies = [
         year: "2019",
         duration: "2 hours 9 minutes",
         genre: "Action/Sci-fi",
-        description: "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever."
+        description: "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
+        trailer: "Nt9L1jCKGnE"
     },
     {
         title: "Spider-Man Homecoming",
@@ -107,7 +117,8 @@ const movies = [
         year: "2017",
         duration: "2 hours 13 minutes",
         genre: "Action/Sci-fi",
-        description: "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City."
+        description: "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.",
+        trailer: "n9DwoQ7HWvI"
     },
     {
         title: "Thor Love and Thunder",
@@ -117,7 +128,8 @@ const movies = [
         year: "2022",
         duration: "1 hour 58 minutes",
         genre: "Action/Adventure",
-        description: "Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct."
+        description: "Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.",
+        trailer: "Go8nTmfrQd8"
     },
     {
         title: "Thor Ragnarok",
@@ -127,6 +139,7 @@ const movies = [
         year: "2017",
         duration: "2 hours 10 minutes",
         genre: "Action/Adventure",
-        description: "Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela."
+        description: "Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+        trailer: "ue80QwXMRHg"
     }
 ];
