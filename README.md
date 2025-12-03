@@ -1,6 +1,20 @@
-# OTT Home Interface
+<div align="center">
+<h1>🎬 OTT Home Interface</h1>
 
-A modern, responsive homepage interface for an OTT (Over-The-Top) streaming platform. This project showcases a dynamic and interactive user experience for browsing movies and TV shows, featuring a cinematic background trailer and an interactive card slider.
+<p>
+ A modern, responsive homepage interface for an OTT (Over-The-Top) streaming platform. This project showcases a dynamic and interactive user experience for browsing movies and TV shows, featuring a cinematic background trailer and an interactive card slider.
+<p>
+    <a href="https://github.com/AnishDebnath/ott-hometv-interface/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/AnishDebnath/ott-hometv-interface">
+    </a>
+    <a href="https://github.com/AnishDebnath/ott-hometv-interface/blob/main/LICENSE">
+      <img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg">
+    </a>
+    <img alt="Made with" src="https://img.shields.io/badge/made%20with-HTML%20%7C%20Tailwind CSS%20%7C%20JS-1f2937">
+  </p>
+</div>
+
+<hr>
 
 ## 🚀 Features
 
@@ -21,6 +35,11 @@ A modern, responsive homepage interface for an OTT (Over-The-Top) streaming plat
 *   **CSS3 (Tailwind CSS)**: Utility-first styling for rapid and responsive design.
 *   **JavaScript (Vanilla)**: Core logic for interactivity, API integration, and state management.
 *   **YouTube IFrame API**: For embedding and controlling background trailers.
+
+<h2>📸 Screenshot - UI Design</h2>
+
+<img width="1920" height="1080" alt="Home Page" src="https://github.com/user-attachments/assets/08d7afa8-3c39-4fc4-97cf-5ebd1fbb2630" />
+
 
 ## 📂 Project Structure
 
@@ -69,11 +88,13 @@ OTT-Home-Interface/
 *   **Watch**: The background video loops automatically. Use the mute button to toggle sound.
 *   **Read**: Click "Show more" on the description to read the full plot summary.
 
-## 👨‍💻 Author
+<h2>📄 License</h2>
+<p><strong>CopyRight ©</strong> AnishDebnath. 2k25.</p>
 
-**Anish Debnath**
-*   GitHub: [AnishDebnath](https://github.com/AnishDebnath)
-
-## 📄 License
-
-This project is licensed under the ISC License.
+<h2>👨‍💻 Developed By</h2>
+<p>
+  <strong>ANISH DEBNATH</strong><br/>
+  UI/UX Developer <br/>   
+  📧 Email: anish.debnath2001@gmail.com <br/>
+  🔗 Portfolio: https://anishdebnath.netlify.app/
+</p>
