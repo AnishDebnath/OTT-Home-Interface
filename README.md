@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🎬 OTT Home Interface</h1>
+<h1>🎬 OTT HomeTV Interface</h1>
 
 <p>
  A modern, responsive homepage interface for an OTT (Over-The-Top) streaming platform. This project showcases a dynamic and interactive user experience for browsing movies and TV shows, featuring a cinematic background trailer and an interactive card slider.
@@ -15,6 +15,13 @@
 </div>
 
 <hr>
+
+<h2>🔗 Live Demo</h2>
+<p>
+  <a href="https://anishdebnath.github.io/OTT-Home-Interface/" target="_blank">
+    OTT HomeTV Interface
+  </a>
+</p>
 
 ## 🚀 Features
 
