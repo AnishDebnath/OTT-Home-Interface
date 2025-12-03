@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
     if (toggleButton && content) {
         toggleButton.addEventListener('click', () => {
             content.classList.toggle('line-clamp-3');
-            content.classList.toggle('w-[800px]');
+            content.classList.toggle('md:w-[800px]');
 
             if (content.classList.contains('line-clamp-3')) {
                 toggleButton.textContent = 'Show more';
@@ -62,7 +62,7 @@ window.addEventListener('load', () => {
         if (content) {
             content.textContent = movie.description;
             content.classList.add('line-clamp-3');
-            content.classList.remove('w-[800px]');
+            content.classList.remove('md:w-[800px]');
             if (toggleButton) toggleButton.textContent = 'Show more';
         }
 
@@ -157,6 +157,7 @@ window.addEventListener('load', () => {
 
         cardContainer.style.cursor = 'grab';
 
+        // Mouse events
         cardContainer.addEventListener('mousedown', (e) => {
             isDown = true;
             cardContainer.style.cursor = 'grabbing';
@@ -179,6 +180,24 @@ window.addEventListener('load', () => {
             e.preventDefault();
             const x = e.pageX - cardContainer.offsetLeft;
             const walk = (x - startX) * 0.8;
+            cardContainer.scrollLeft = scrollLeft - walk;
+        });
+
+        // Touch events for mobile/tablet
+        cardContainer.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - cardContainer.offsetLeft;
+            scrollLeft = cardContainer.scrollLeft;
+        });
+
+        cardContainer.addEventListener('touchend', () => {
+            isDown = false;
+        });
+
+        cardContainer.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            const x = e.touches[0].pageX - cardContainer.offsetLeft;
+            const walk = (x - startX) * 1.5; // Increased sensitivity for touch
             cardContainer.scrollLeft = scrollLeft - walk;
         });
     }
